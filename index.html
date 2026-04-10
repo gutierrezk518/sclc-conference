@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCLC 2027 — Sponsorship Opportunities | Temple Fox MIS</title>
+<meta name="description" content="Partner with the next generation of MIS leaders at SCLC 2027. Six sponsorship tiers from $2,500 to $30,000. April 1-2, 2027 at Temple University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cherry: #a41e35;
+  --cherry-dark: #941b30;
+  --white: #FFFFFF;
+  --black: #000000;
+  --charcoal: #222222;
+  --eggshell: #f2eee8;
+  --taupe: #bca685;
+  --ochre: #fcb813;
+  --silver-brand: #C1C6C8;
+  --tier-bronze: #B87333;
+  --tier-silver: #8A95A5;
+  --tier-gold: #D4A017;
+  --tier-dinner: #C44569;
+  --tier-diamond: #3A8DDE;
+  --tier-presenting: #a41e35;
+  --bg-page: #FFFFFF;
+  --bg-alt: #f2eee8;
+  --border: #e0dbd4;
+  --text: #222222;
+  --text-muted: #5a5a5a;
+  --font-heading: "Faustina", Georgia, "Times New Roman", serif;
+  --font-body: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-condensed: "Roboto Condensed", "Roboto", sans-serif;
+  --max-w: 1200px;
+  --nav-h: 64px;
+  --ease: 0.3s ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body { font-family: var(--font-body); color: var(--text); line-height: 1.6; background: var(--bg-page); -webkit-font-smoothing: antialiased; }
+a { color: var(--cherry); text-decoration: none; }
+a:hover { text-decoration: underline; }
+ul { list-style: none; }
+button { cursor: pointer; font-family: inherit; }
+h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; line-height: 1.25; color: var(--charcoal); }
+h1 { font-size: 2.5rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.875rem; margin-bottom: 0.5rem; }
+h3 { font-size: 1.375rem; }
+p { margin-bottom: 1rem; }
+
+.wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; }
+.sec { padding: 5rem 0; }
+.sec--alt { background: var(--bg-alt); }
+.sec--cherry { background: var(--cherry); color: var(--white); }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+
+/* ===== NAV ===== */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--white); border-bottom: 2px solid var(--eggshell);
+  height: var(--nav-h); display: flex; align-items: center;
+}
+.nav .wrap { display: flex; align-items: center; justify-content: space-between; width: 100%; }
+.nav-logo { font-family: var(--font-heading); font-size: 1.25rem; font-weight: bold; color: var(--cherry); white-space: nowrap; }
+.nav-logo:hover { text-decoration: none; }
+.nav-links { display: flex; gap: 1.5rem; align-items: center; }
+.nav-links a { font-family: var(--font-condensed); font-size: 0.875rem; font-weight: 600; color: var(--text); text-transform: uppercase; letter-spacing: 0.04em; transition: color var(--ease); }
+.nav-links a:hover { color: var(--cherry); text-decoration: none; }
+.hamburger { display: none; background: none; border: none; padding: 0.5rem; color: var(--text); }
+.hamburger svg { display: block; }
+.mobile-nav {
+  display: none; position: fixed; inset: 0; top: var(--nav-h);
+  background: var(--white); z-index: 99; padding: 2rem 1.5rem; flex-direction: column;
+}
+.mobile-nav.open { display: flex; }
+.mobile-nav a { display: block; padding: 1rem 0; font-family: var(--font-condensed); font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text); border-bottom: 1px solid var(--border); }
+.mobile-nav a:hover { color: var(--cherry); text-decoration: none; }
+
+/* ===== BUTTONS ===== */
+.btn {
+  display: inline-block; padding: 0.8rem 2.25rem; border-radius: 4px;
+  font-family: var(--font-condensed); font-weight: 700; font-size: 0.9rem;
+  text-transform: uppercase; letter-spacing: 0.06em; text-decoration: none;
+  transition: all var(--ease); border: 2px solid transparent;
+}
+.btn:hover { text-decoration: none; }
+.btn--cherry { background: var(--cherry); color: var(--white); border-color: var(--cherry); }
+.btn--cherry:hover { background: var(--cherry-dark); border-color: var(--cherry-dark); }
+.btn--white { background: var(--white); color: var(--cherry); border-color: var(--white); }
+.btn--white:hover { background: #f0f0f0; }
+.btn--outline-white { background: transparent; color: var(--white); border-color: var(--white); }
+.btn--outline-white:hover { background: rgba(255,255,255,0.1); }
+
+/* ===== HERO ===== */
+.hero {
+  position: relative; overflow: hidden;
+  padding-top: calc(var(--nav-h) + 4rem); padding-bottom: 5rem;
+  border-top: 4px solid var(--cherry); text-align: center;
+}
+.hero-video {
+  position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%;
+  width: auto; height: auto; transform: translate(-50%, -50%);
+  z-index: 0; object-fit: cover;
+}
+.hero::after {
+  content: ''; position: absolute; inset: 0;
+  background: rgba(0, 0, 0, 0.65); z-index: 1;
+}
+.hero .wrap { position: relative; z-index: 2; }
+.eyebrow { font-family: var(--font-condensed); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--white); margin-bottom: 1rem; opacity: 0.9; }
+.hero h1 { margin-bottom: 1rem; color: var(--white); }
+.hero .subhead { font-size: 1.125rem; color: rgba(255,255,255,0.85); max-width: 640px; margin: 0 auto 2.5rem; }
+.stats-row { display: flex; justify-content: center; gap: 3rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+.stat-num { font-family: var(--font-heading); font-size: 2.75rem; font-weight: 700; color: var(--white); line-height: 1.15; }
+.stat-label { font-size: 0.875rem; color: rgba(255,255,255,0.8); }
+
+/* ===== PILLARS ===== */
+.pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 2rem; }
+.pillar { background: var(--white); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; text-align: center; }
+.pillar-icon { width: 48px; height: 48px; margin: 0 auto 1rem; color: var(--cherry); }
+.pillar h3 { margin-bottom: 0.5rem; }
+.pillar p { margin-bottom: 0; color: var(--text-muted); font-size: 0.95rem; }
+
+/* ===== TIER CARDS ===== */
+.tiers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 2rem; }
+.tier {
+  background: var(--white); border: 1px solid var(--border); border-radius: 12px;
+  padding: 2rem 1.5rem; display: flex; flex-direction: column; position: relative;
+  transition: transform var(--ease), box-shadow var(--ease);
+}
+.tier:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.tier[data-t="bronze"]     { border-top: 4px solid var(--tier-bronze); }
+.tier[data-t="silver"]     { border-top: 4px solid var(--tier-silver); }
+.tier[data-t="gold"]       { border-top: 4px solid var(--tier-gold); }
+.tier[data-t="dinner"]     { border-top: 4px solid var(--tier-dinner); }
+.tier[data-t="diamond"]    { border-top: 4px solid var(--tier-diamond); }
+.tier[data-t="presenting"] { border-top: 4px solid var(--tier-presenting); }
+
+.tier-badge {
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 1rem; font-family: var(--font-heading);
+  font-size: 1.25rem; font-weight: bold; color: var(--white);
+}
+.tier[data-t="bronze"] .tier-badge     { background: var(--tier-bronze); }
+.tier[data-t="silver"] .tier-badge     { background: var(--tier-silver); }
+.tier[data-t="gold"] .tier-badge       { background: var(--tier-gold); }
+.tier[data-t="dinner"] .tier-badge     { background: var(--tier-dinner); }
+.tier[data-t="diamond"] .tier-badge    { background: var(--tier-diamond); }
+.tier[data-t="presenting"] .tier-badge { background: var(--tier-presenting); }
+
+.tier-name { text-align: center; margin-bottom: 0.25rem; }
+.tier[data-t="bronze"] .tier-name     { color: var(--tier-bronze); }
+.tier[data-t="silver"] .tier-name     { color: var(--tier-silver); }
+.tier[data-t="gold"] .tier-name       { color: var(--tier-gold); }
+.tier[data-t="dinner"] .tier-name     { color: var(--tier-dinner); }
+.tier[data-t="diamond"] .tier-name    { color: var(--tier-diamond); }
+.tier[data-t="presenting"] .tier-name { color: var(--tier-presenting); }
+
+.tier-price { text-align: center; font-size: 2rem; font-weight: 700; color: var(--black); margin-bottom: 0.5rem; }
+.tier-slots { text-align: center; margin-bottom: 0.75rem; }
+.pill { display: inline-block; font-family: var(--font-condensed); font-size: 0.75rem; font-weight: 600; padding: 0.25rem 0.75rem; border-radius: 999px; background: var(--bg-alt); color: var(--text-muted); letter-spacing: 0.02em; }
+.pill--ex { background: var(--cherry); color: var(--white); }
+.tier-tag { text-align: center; font-style: italic; color: var(--text-muted); margin-bottom: 1.25rem; font-size: 0.95rem; }
+.tier-inc { font-family: var(--font-condensed); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.75rem; }
+.tier-list { margin-bottom: 1.25rem; flex: 1; }
+.tier-list li { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.5rem; font-size: 0.9rem; line-height: 1.4; }
+.tier-list li svg { flex-shrink: 0; width: 18px; height: 18px; margin-top: 2px; }
+.tier-best { font-size: 0.85rem; font-style: italic; color: var(--text-muted); margin-bottom: 1.25rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.tier-best strong { font-style: normal; color: var(--text); }
+.tier-cta { text-align: center; margin-top: auto; }
+.btn-tier {
+  display: block; width: 100%; padding: 0.65rem 1rem; border-radius: 4px;
+  font-family: var(--font-condensed); font-weight: 700; font-size: 0.8rem;
+  text-transform: uppercase; letter-spacing: 0.05em; border: 2px solid;
+  background: transparent; text-align: center; transition: all var(--ease); text-decoration: none;
+}
+.btn-tier:hover { text-decoration: none; color: var(--white); }
+.tier[data-t="bronze"] .btn-tier     { color: var(--tier-bronze); border-color: var(--tier-bronze); }
+.tier[data-t="bronze"] .btn-tier:hover { background: var(--tier-bronze); }
+.tier[data-t="silver"] .btn-tier     { color: var(--tier-silver); border-color: var(--tier-silver); }
+.tier[data-t="silver"] .btn-tier:hover { background: var(--tier-silver); }
+.tier[data-t="gold"] .btn-tier       { color: var(--tier-gold); border-color: var(--tier-gold); }
+.tier[data-t="gold"] .btn-tier:hover { background: var(--tier-gold); }
+.tier[data-t="dinner"] .btn-tier     { color: var(--tier-dinner); border-color: var(--tier-dinner); }
+.tier[data-t="dinner"] .btn-tier:hover { background: var(--tier-dinner); }
+.tier[data-t="diamond"] .btn-tier    { color: var(--tier-diamond); border-color: var(--tier-diamond); }
+.tier[data-t="diamond"] .btn-tier:hover { background: var(--tier-diamond); }
+.tier[data-t="presenting"] .btn-tier { color: var(--tier-presenting); border-color: var(--tier-presenting); }
+.tier[data-t="presenting"] .btn-tier:hover { background: var(--tier-presenting); }
+
+/* ===== COMPARISON TABLE ===== */
+.scroll-hint { display: none; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.75rem; text-align: center; }
+.table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; border: 1px solid var(--border); border-radius: 8px; margin-top: 2rem; }
+.cmp { width: 100%; min-width: 860px; border-collapse: collapse; font-size: 0.875rem; }
+.cmp thead th { padding: 1rem 0.75rem; text-align: center; font-weight: 700; background: var(--bg-alt); border-bottom: 2px solid var(--border); white-space: nowrap; }
+.cmp thead th:first-child { text-align: left; min-width: 220px; }
+.cmp .col-name { display: block; font-family: var(--font-condensed); font-size: 0.9rem; font-weight: 700; }
+.cmp .col-price { display: block; font-size: 0.75rem; color: var(--text-muted); font-weight: 400; }
+.cmp tbody td { padding: 0.75rem; border-bottom: 1px solid var(--border); text-align: center; vertical-align: middle; }
+.cmp tbody td:first-child { text-align: left; font-weight: 600; color: var(--text); background: var(--white); position: sticky; left: 0; z-index: 2; }
+.cmp tbody tr:hover:not(.cmp-cat):not(.def-row) td { background: #f0f1f3; }
+.cmp tbody tr:hover:not(.cmp-cat):not(.def-row) td:first-child { background: #f0f1f3; }
+.ck { display: inline-flex; align-items: center; gap: 0.25rem; }
+.ck svg { width: 18px; height: 18px; }
+.lead-b { font-size: 0.65rem; font-weight: 700; padding: 0.1rem 0.4rem; border-radius: 4px; background: var(--cherry); color: var(--white); text-transform: uppercase; letter-spacing: 0.04em; }
+.cell-txt { font-size: 0.8rem; color: var(--text-muted); }
+.cmp-cat td { background: var(--cherry) !important; color: var(--white) !important; border-left: none; font-family: var(--font-condensed); font-weight: 700; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; text-align: left !important; padding: 0.65rem 1rem; border-bottom: none !important; }
+.cmp-cat:hover td { background: var(--cherry) !important; }
+.cmp tbody td.ben-name { cursor: pointer; padding-left: 2.25rem; position: relative; }
+.cmp tbody td.ben-name::before { content: ''; display: inline-block; width: 0; height: 0; border-top: 4px solid transparent; border-bottom: 4px solid transparent; border-left: 5px solid var(--text-muted); position: absolute; left: 1.1rem; top: 50%; transform: translateY(-50%); transition: transform 0.2s ease; }
+.cmp tbody td.ben-name:hover { color: var(--cherry); }
+.cmp tbody td.ben-name:hover::before { border-left-color: var(--cherry); }
+.cmp tbody tr.def-open td.ben-name::before { transform: translateY(-50%) rotate(90deg); }
+.def-row { display: none; }
+.def-row.def-open { display: table-row; }
+.def-row td { background: var(--eggshell) !important; padding: 0.75rem 1rem 0.75rem 2.25rem !important; font-size: 0.85rem; line-height: 1.6; color: var(--text-muted); font-weight: 400 !important; text-align: left !important; border-bottom: 1px solid var(--border) !important; }
+
+/* ===== ACCORDION ===== */
+.acc-group { margin-top: 2rem; }
+.acc {
+  border: 1px solid var(--border); border-radius: 8px;
+  margin-bottom: 0.75rem; background: var(--white); overflow: hidden;
+}
+.acc-btn {
+  width: 100%; display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 1.5rem; background: none; border: none;
+  font-size: 1rem; font-weight: 600; color: var(--text); text-align: left;
+  cursor: pointer; transition: background var(--ease);
+}
+.acc-btn:hover { background: var(--bg-alt); }
+.acc-btn svg { flex-shrink: 0; width: 20px; height: 20px; transition: transform var(--ease); color: var(--text-muted); }
+.acc.open .acc-btn svg { transform: rotate(180deg); }
+.acc-panel { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+.acc-inner { padding: 0 1.5rem 1.25rem; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; }
+
+/* ===== CTA ===== */
+.cta { text-align: center; }
+.cta h2 { color: var(--white); margin-bottom: 1rem; }
+.cta .lead { color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 2rem; }
+.cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
+.cta-contact { font-size: 0.9rem; color: rgba(255,255,255,0.8); }
+.cta-contact strong { color: var(--white); }
+
+/* ===== FOOTER ===== */
+.footer { background: var(--charcoal); color: #D1D5DB; padding: 3rem 0 0; font-size: 0.875rem; }
+.footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.footer-col h4 { font-family: var(--font-condensed); color: var(--white); margin-bottom: 0.75rem; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; }
+.footer-col a { color: #D1D5DB; font-size: 0.85rem; }
+.footer-col a:hover { color: var(--white); }
+.footer-col p, .footer-col li { margin-bottom: 0.4rem; }
+.footer-bottom { border-top: 1px solid #444; padding: 1.25rem 0; text-align: center; color: #9CA3AF; font-size: 0.8rem; font-family: var(--font-condensed); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) { .tiers-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 768px) {
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  .sec { padding: 3rem 0; }
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+  .tiers-grid { grid-template-columns: 1fr; }
+  .pillars { grid-template-columns: 1fr; }
+  .stats-row { gap: 1.5rem; }
+  .hero { padding-top: calc(var(--nav-h) + 2rem); padding-bottom: 3rem; }
+  .scroll-hint { display: block; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .cta-btns { flex-direction: column; align-items: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" role="banner">
+  <div class="wrap">
+    <a href="#top" class="nav-logo">SCLC 2027</a>
+    <nav class="nav-links" role="navigation" aria-label="Main navigation">
+      <a href="#top">Overview</a>
+      <a href="#tiers">Tiers</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" role="navigation" aria-label="Mobile navigation">
+  <a href="#top">Overview</a>
+  <a href="#tiers">Tiers</a>
+  <a href="#compare">Compare</a>
+  <a href="#benefits">Benefits</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="top" class="hero">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="FOX-Website-Homepage-20200520-1.mp4" type="video/mp4">
+  </video>
+  <div class="wrap">
+    <p class="eyebrow">Student Chapter Leadership Conference 2027</p>
+    <h1>Sponsorship Opportunities</h1>
+    <p class="subhead">Partner with the next generation of MIS leaders. April 1&ndash;2, 2027 at Temple University in Philadelphia.</p>
+    <div class="stats-row">
+      <div style="text-align:center"><div class="stat-num">250+</div><div class="stat-label">students from MIS programs nationwide</div></div>
+      <div style="text-align:center"><div class="stat-num">6</div><div class="stat-label">sponsorship tiers, $2,500 to $30,000</div></div>
+      <div style="text-align:center"><div class="stat-num">1.5 days</div><div class="stat-label">of competitions, workshops, and networking</div></div>
+    </div>
+    <a href="#tiers" class="btn btn--white">View Sponsorship Tiers</a>
+  </div>
+</section>
+
+<!-- WHY SPONSOR -->
+<section class="sec sec--alt">
+  <div class="wrap">
+    <h2>Why sponsor SCLC?</h2>
+    <p>Your choice to sponsor SCLC 2027 is not just a donation, but rather a partnership with the strongest MIS students in the country. Whether your goal is hiring, brand visibility, thought leadership, or community investment, SCLC delivers measurable value across one and a half days, and a year-round relationship with MIS at Temple University.</p>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Talent Pipeline</h3>
+        <p>Interact with up to 250+ pre-qualified MIS students actively entering the workforce, with priority resume access and private networking sessions.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Brand Visibility</h3>
+        <p>Logo placement, co-branding opportunities, and stage presence in front of the top MIS students from programs across the country.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg></div>
+        <h3>Thought Leadership</h3>
+        <p>Panel seats, keynote slots, and workshop opportunities that position your leaders as voices shaping the next generation of MIS professionals.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h3>Community Investment</h3>
+        <p>A meaningful partnership with Temple Fox MIS that extends beyond the conference into year-round student development and campus engagement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section id="compare" class="sec">
+  <div class="wrap">
+    <h2>Compare All Tiers</h2>
+    <p style="color:var(--text-muted)">What's included at each level.</p>
+    <p class="scroll-hint">Swipe left to see all tiers &rarr;</p>
+    <div class="table-wrap">
+      <table class="cmp">
+        <thead>
+          <tr>
+            <th>Benefit</th>
+            <th><span class="col-name" style="color:var(--tier-bronze)">Bronze</span><span class="col-price">$2,500</span></th>
+            <th><span class="col-name" style="color:var(--tier-silver)">Silver</span><span class="col-price">$4,000</span></th>
+            <th><span class="col-name" style="color:var(--tier-gold)">Gold</span><span class="col-price">$8,000</span></th>
+            <th><span class="col-name" style="color:var(--tier-dinner)">Dinner</span><span class="col-price">$10,000</span></th>
+            <th><span class="col-name" style="color:var(--tier-diamond)">Diamond</span><span class="col-price">$16,000</span></th>
+            <th><span class="col-name" style="color:var(--tier-presenting)">Presenting</span><span class="col-price">$30,000</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- RECRUITING -->
+          <tr class="cmp-cat"><td colspan="7">Recruiting</td></tr>
+          <tr><td class="ben-name">Priority resume access (early book)</td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#B87333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">You receive the full attendee resume book 2&ndash;4 weeks before the conference, giving your recruiting team a head start to identify top candidates and reach out before competitors do.</td></tr>
+          <tr><td class="ben-name">Targeted talent email campaign</td><td><span class="cell-txt">1 send</span></td><td><span class="cell-txt">1 send</span></td><td><span class="cell-txt">2 sends</span></td><td><span class="cell-txt">2 sends</span></td><td><span class="cell-txt">2 sends</span></td><td><span class="cell-txt">2 sends</span></td></tr>
+          <tr class="def-row"><td colspan="7">SCLC sends branded emails on your behalf to opted-in attendees, highlighting your open roles or recruiting events. SCLC owns the send to stay FERPA-compliant, but you control the message.</td></tr>
+          <tr><td class="ben-name">Career fair table at SCLC (Day 2 lunch)</td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#B87333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">A dedicated recruiting table during the lunch hour on Day 2, when all 250+ students rotate through the career fair area. Includes table, chairs, signage space, and student traffic during the highest-attendance moment.</td></tr>
+          <tr><td class="ben-name">Resume books (full conference book)</td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">The complete conference resume book distributed to all sponsors at the start of Day 1. Includes resumes of every attendee who opted in, organized by graduation year and major focus area.</td></tr>
+          <tr><td class="ben-name">Exclusive recruiting table placement</td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">Your career fair table is placed in a premium location &mdash; front row, near the main entrance, or adjacent to high-traffic zones. Placements rotate among Silver+ sponsors based on commitment date.</td></tr>
+          <tr><td class="ben-name">Fall IT career fair access</td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">Access to Temple Fox MIS's annual fall IT career fair. This is normally a separate paid sponsorship &mdash; Silver and above get one table included as part of your SCLC partnership. Two events for one investment.</td></tr>
+          <tr><td class="ben-name">Private student networking session</td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">A dedicated networking event for your team and a curated group of students. Smaller and more intimate than the main career fair, with built-in time for real conversations.</td></tr>
+          <tr><td class="ben-name">Premium talent book (pre-screened)</td><td></td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">A curated, pre-screened subset of attendees matching your specific hiring criteria. SCLC's team works with your recruiting lead before the conference to pre-screen and rank candidates.</td></tr>
+          <!-- BRAND & VISIBILITY -->
+          <tr class="cmp-cat"><td colspan="7">Brand &amp; Visibility</td></tr>
+          <tr><td class="ben-name">Name/logo on event marketing</td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#B87333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> <span class="lead-b">Lead</span></span></td></tr>
+          <tr class="def-row"><td colspan="7">Your company name and logo featured across all SCLC 2027 promotional materials including the event website, email campaigns, social media, and printed signage. Logo size and placement scale with tier level.</td></tr>
+          <tr><td class="ben-name">Co-host billing</td><td></td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">Listed as an official co-host of SCLC 2027 alongside Temple Fox MIS on all event materials, communications, and signage. Significant brand association with one of the country's top MIS programs.</td></tr>
+          <tr><td class="ben-name">"Presented by" branding</td><td></td><td></td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">The conference is officially "SCLC 2027, presented by [Your Company]." This co-branding appears on all materials, the website, signage, communications, and the conference's permanent record.</td></tr>
+          <tr><td class="ben-name">Lead logo placement on signage</td><td></td><td></td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">Your logo appears in the lead position on every piece of conference signage &mdash; main stage backdrop, registration area, hallway banners, dinner venue, awards ceremony.</td></tr>
+          <!-- CONTENT & ENGAGEMENT -->
+          <tr class="cmp-cat"><td colspan="7">Content &amp; Engagement</td></tr>
+          <tr><td class="ben-name">Professional panel seat</td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">Your senior representative joins a moderated panel where industry leaders share career insights with students. The panel is branded "Sponsored by [Your Company]." Strong thought-leadership and visibility play.</td></tr>
+          <tr><td class="ben-name">Company case challenge + judging</td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">You provide a real strategic problem and student teams compete to solve it. Your team judges entries and selects winners. You get fresh thinking on a real problem and watch how candidates perform under pressure.</td></tr>
+          <tr><td class="ben-name">Workshop or tech talk</td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">Host a hands-on workshop or technical talk during the conference. Put your platform, methodology, or product directly in front of 250 future MIS professionals. Especially valuable for SaaS and enterprise platforms.</td></tr>
+          <tr><td class="ben-name">Guaranteed competition slot</td><td></td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">Reserved spot to host one of the six conference competitions. Your company name is on the competition, and your team participates in judging. Guaranteed for Diamond and Presenting; Gold sponsors on a first-committed basis.</td></tr>
+          <!-- SPEAKING & KEYNOTES -->
+          <tr class="cmp-cat"><td colspan="7">Speaking &amp; Keynotes</td></tr>
+          <tr><td class="ben-name">Kickoff dinner keynote</td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td></td><td></td></tr>
+          <tr class="def-row"><td colspan="7">The Dinner Sponsor delivers the featured keynote at the kickoff dinner &mdash; the first major moment of the conference, with all 250+ attendees in the room. The single highest-attention speaking slot.</td></tr>
+          <tr><td class="ben-name">Awards ceremony keynote</td><td></td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td></td></tr>
+          <tr class="def-row"><td colspan="7">The Diamond Sponsor delivers the featured keynote at the awards ceremony &mdash; the celebratory closing-out moment where competition winners are announced and the energy is highest.</td></tr>
+          <tr><td class="ben-name">Closing keynote slot</td><td></td><td></td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">The Presenting Sponsor delivers the closing keynote &mdash; the final word, the send-off moment. The conference's last impression is shaped by your senior leader's voice.</td></tr>
+          <!-- PREMIUM EXTRAS -->
+          <tr class="cmp-cat"><td colspan="7">Premium Extras</td></tr>
+          <tr><td class="ben-name">Premium dinner signage</td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td><td></td><td></td></tr>
+          <tr class="def-row"><td colspan="7">Branded signage throughout the dinner venue &mdash; banners, table cards, projected logo, and printed program recognition. Reserved exclusively for the Dinner Sponsor.</td></tr>
+          <tr><td class="ben-name">Branded quarter-zips (10 + 5)</td><td></td><td></td><td></td><td></td><td></td><td><span class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span></td></tr>
+          <tr class="def-row"><td colspan="7">Custom quarter-zip jackets co-branded with your company logo, Temple, and "SCLC 2027." 10 for the SCLC leadership team and 5 for your sponsor team in preferred sizes.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TIER CARDS -->
+<section id="tiers" class="sec">
+  <div class="wrap">
+    <h2>Six Sponsorship Tiers</h2>
+    <p style="color:var(--text-muted)">Three tiers are exclusive single-slot offerings. Competitions are capped at 6 sponsors total.</p>
+    <div class="tiers-grid">
+
+      <!-- BRONZE -->
+      <article class="tier" data-t="bronze">
+        <div class="tier-badge">B</div>
+        <h3 class="tier-name">Bronze</h3>
+        <div class="tier-price">$2,500</div>
+        <div class="tier-slots"><span class="pill">Unlimited slots</span></div>
+        <p class="tier-tag">Get in the room.</p>
+        <div class="tier-inc">Includes</div>
+        <ul class="tier-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#B87333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Name/logo on event marketing</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#B87333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Priority resume access (early book)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#B87333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Targeted talent email campaign (1 send)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#B87333" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Career fair table at SCLC (lunch, Day 2)</li>
+        </ul>
+        <p class="tier-best"><strong>Best for:</strong> Companies new to the program who want a low-risk first touch with Temple MIS &mdash; typically local employers.</p>
+        <div class="tier-cta"><a href="mailto:sponsorship@example.com?subject=SCLC%202027%20Bronze%20Sponsorship%20Inquiry" class="btn-tier">Inquire About Bronze</a></div>
+      </article>
+
+      <!-- SILVER -->
+      <article class="tier" data-t="silver">
+        <div class="tier-badge">S</div>
+        <h3 class="tier-name">Silver</h3>
+        <div class="tier-price">$4,000</div>
+        <div class="tier-slots"><span class="pill">Unlimited slots</span></div>
+        <p class="tier-tag">Two events for the price of one.</p>
+        <div class="tier-inc">Includes</div>
+        <ul class="tier-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Everything in Bronze</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Resume books (full conference book)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Exclusive recruiting table placement</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#8A95A5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Access to Temple's annual fall IT career fair</li>
+        </ul>
+        <p class="tier-best"><strong>Best for:</strong> Companies that want year-round Temple MIS presence, not just one weekend. The fall career fair makes this the smartest mid-tier value.</p>
+        <div class="tier-cta"><a href="mailto:sponsorship@example.com?subject=SCLC%202027%20Silver%20Sponsorship%20Inquiry" class="btn-tier">Inquire About Silver</a></div>
+      </article>
+
+      <!-- GOLD -->
+      <article class="tier" data-t="gold">
+        <div class="tier-badge">G</div>
+        <h3 class="tier-name">Gold</h3>
+        <div class="tier-price">$8,000</div>
+        <div class="tier-slots"><span class="pill">Min. 5 to launch &middot; 6 competition cap</span></div>
+        <p class="tier-tag">Hands-on engagement with students.</p>
+        <div class="tier-inc">Includes</div>
+        <ul class="tier-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Everything in Silver</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Private student networking session</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Professional panel seat</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Company case challenge + judging</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Workshop or tech talk</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#D4A017" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Targeted talent email campaign (2 sends)</li>
+        </ul>
+        <p class="tier-best"><strong>Best for:</strong> Recruiting/brand-play companies (SAP, GitHub, Salesforce). The case challenge is the unlock &mdash; 250 MIS students working on your real problem for a weekend.</p>
+        <div class="tier-cta"><a href="mailto:sponsorship@example.com?subject=SCLC%202027%20Gold%20Sponsorship%20Inquiry" class="btn-tier">Inquire About Gold</a></div>
+      </article>
+
+      <!-- DINNER -->
+      <article class="tier" data-t="dinner">
+        <div class="tier-badge">D</div>
+        <h3 class="tier-name">Dinner</h3>
+        <div class="tier-price">$10,000</div>
+        <div class="tier-slots"><span class="pill pill--ex">1 slot &mdash; EXCLUSIVE</span></div>
+        <p class="tier-tag">Own the kickoff moment.</p>
+        <div class="tier-inc">Includes</div>
+        <ul class="tier-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Everything in Gold</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Featured speaker at SCLC kickoff dinner</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Premium signage at dinner venue</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#C44569" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>First impression with all 250+ attendees</li>
+        </ul>
+        <p class="tier-best"><strong>Best for:</strong> Companies whose primary goal is brand moment and senior visibility. Perfect for a senior exec who wants stage time in front of the next generation of MIS talent.</p>
+        <div class="tier-cta"><a href="mailto:sponsorship@example.com?subject=SCLC%202027%20Dinner%20Sponsorship%20Inquiry" class="btn-tier">Inquire About Dinner</a></div>
+      </article>
+
+      <!-- DIAMOND -->
+      <article class="tier" data-t="diamond">
+        <div class="tier-badge">&diams;</div>
+        <h3 class="tier-name">Diamond</h3>
+        <div class="tier-price">$16,000</div>
+        <div class="tier-slots"><span class="pill pill--ex">1 slot &mdash; EXCLUSIVE</span></div>
+        <p class="tier-tag">The recruiting powerhouse.</p>
+        <div class="tier-inc">Includes</div>
+        <ul class="tier-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Everything in Gold</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Co-host billing on event materials</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Featured speaker at awards ceremony</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Guaranteed competition slot</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Featured panel + workshop slots</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#3A8DDE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Premium talent book (pre-screened candidates)</li>
+        </ul>
+        <p class="tier-best"><strong>Best for:</strong> Formal University Relations programs (Deloitte, Accenture, EY) where the goal is maximum hiring throughput. The pre-screened talent book + co-host billing is the highest-ROI recruiting package.</p>
+        <div class="tier-cta"><a href="mailto:sponsorship@example.com?subject=SCLC%202027%20Diamond%20Sponsorship%20Inquiry" class="btn-tier">Inquire About Diamond</a></div>
+      </article>
+
+      <!-- PRESENTING -->
+      <article class="tier" data-t="presenting">
+        <div class="tier-badge">&starf;</div>
+        <h3 class="tier-name">Presenting</h3>
+        <div class="tier-price">$30,000</div>
+        <div class="tier-slots"><span class="pill pill--ex">1 slot &mdash; EXCLUSIVE</span></div>
+        <p class="tier-tag">SCLC 2027, presented by you.</p>
+        <div class="tier-inc">Includes</div>
+        <ul class="tier-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Everything in Diamond</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>"Presented by [Company]" on all materials</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Closing keynote speaking slot</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Lead logo placement on all signage</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="#9D2235" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>10 branded quarter-zips for SCLC leadership + 5 for sponsor team</li>
+        </ul>
+        <p class="tier-best"><strong>Best for:</strong> The dream sponsor &mdash; a major brand that wants their name fused with Temple MIS for the entire 2026&ndash;2027 academic year.</p>
+        <div class="tier-cta"><a href="mailto:sponsorship@example.com?subject=SCLC%202027%20Presenting%20Sponsorship%20Inquiry" class="btn-tier">Inquire About Presenting</a></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq" class="sec sec--alt">
+  <div class="wrap">
+    <h2>Frequently Asked Questions</h2>
+    <div class="acc-group">
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false">When and where is SCLC 2027? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="acc-panel"><div class="acc-inner">SCLC 2027 will be held April 1&ndash;2, 2027 at Temple University in Philadelphia, Pennsylvania.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false">How many students will attend? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="acc-panel"><div class="acc-inner">We expect approximately 250 MIS students from chapters across the country. These students self-select into a professional conference focused on the MIS discipline &mdash; they are pre-qualified, motivated, and actively entering the workforce.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false">What's the deadline to commit? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="acc-panel"><div class="acc-inner">We are accepting sponsor commitments on a rolling basis. Exclusive tiers (Dinner, Diamond, Presenting) and competition slots are first-come, first-served. We recommend committing early to ensure your preferred tier and engagement options are available.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false">Can we customize a sponsorship package? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="acc-panel"><div class="acc-inner">Yes &mdash; we're happy to discuss custom arrangements for sponsors with specific needs that don't map cleanly to a single tier. Reach out to the sponsorship team to start a conversation.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false">How does the company case challenge work? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="acc-panel"><div class="acc-inner">You provide either a real strategic problem your company is currently facing, or a representative business scenario. During the conference, student teams form to work on the challenge, and your team judges and selects winners. We work with you in advance to scope the challenge and prepare materials. Many sponsors find it doubles as a powerful recruiting tool.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false">What's included in fall IT career fair access? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="acc-panel"><div class="acc-inner">Silver and above sponsors receive one table at Temple Fox MIS's annual fall IT career fair, held every fall semester at Temple. This event is normally a separate paid sponsorship &mdash; for SCLC sponsors, it's included as part of your partnership. You get a year-round Temple MIS presence rather than just a one-weekend touch.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false">Who do we contact to commit? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="acc-panel"><div class="acc-inner">Email us at <a href="mailto:sclc2027@temple.edu">sclc2027@temple.edu</a>. We'll set up a 20-minute call to discuss which tier fits your goals.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false">Can we sponsor at multiple tiers? <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="acc-panel"><div class="acc-inner">Most sponsors choose one tier, but if your company has multiple goals (e.g., recruiting AND brand visibility) we can discuss combination options. The exclusive single-slot tiers (Dinner, Diamond, Presenting) cannot be combined since each is limited to one sponsor.</div></div></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="contact" class="sec sec--cherry cta">
+  <div class="wrap">
+    <h2>Ready to partner with SCLC 2027?</h2>
+    <p class="lead">Reach out to our sponsorship team to discuss which tier fits your goals.</p>
+    <div class="cta-btns">
+      <a href="mailto:sponsorship@example.com?subject=SCLC%202027%20Sponsorship%20Inquiry" class="btn btn--white">Email the Team</a>
+      <a href="#" class="btn btn--outline-white">Download Prospectus</a>
+    </div>
+    <p class="cta-contact">
+      <strong>Keith Gutierrez</strong> &mdash; Conference Chair, SCLC 2027<br>
+      sponsorship@example.com &middot; (215) 555-0000
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>SCLC 2027</h4>
+        <p>Student Chapter Leadership Conference</p>
+        <p>April 1&ndash;2, 2027</p>
+        <p>Temple University, Philadelphia, PA</p>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul>
+          <li><a href="https://community.mis.temple.edu/" target="_blank" rel="noopener">Temple MIS Community</a></li>
+          <li><a href="https://www.fox.temple.edu/" target="_blank" rel="noopener">Fox School of Business</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="mailto:sponsorship@example.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2027 Student Chapter Leadership Conference &middot; Hosted by Temple Fox MIS</div>
+  </div>
+</footer>
+
+<script>
+// Table definition toggle
+document.querySelectorAll('.ben-name').forEach(td => {
+  td.addEventListener('click', () => {
+    const benRow = td.parentElement;
+    const defRow = benRow.nextElementSibling;
+    if (defRow && defRow.classList.contains('def-row')) {
+      const isOpen = defRow.classList.toggle('def-open');
+      benRow.classList.toggle('def-open', isOpen);
+    }
+  });
+});
+
+// Mobile nav toggle
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.getElementById('mobileNav');
+hamburger.addEventListener('click', () => {
+  const open = mobileNav.classList.toggle('open');
+  hamburger.setAttribute('aria-expanded', open);
+});
+mobileNav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Accordion
+document.querySelectorAll('.acc-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const panel = btn.nextElementSibling;
+    const isOpen = item.classList.contains('open');
+    if (isOpen) {
+      panel.style.maxHeight = null;
+      item.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+// Smooth active nav highlighting
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 100) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current ? 'var(--cherry)' : '';
+  });
+}, { passive: true });
+</script>
+</body>
+</html>
